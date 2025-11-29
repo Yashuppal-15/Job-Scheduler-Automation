@@ -1,4 +1,4 @@
-﻿import express, { Express, Request, Response } from 'express';
+﻿import express, { Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { PrismaClient } from '@prisma/client';
@@ -6,13 +6,17 @@ import axios from 'axios';
 
 dotenv.config();
 
-const app: Express = express();
+const app = express();
 const prisma = new PrismaClient();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001'],
+  origin: [
+    'http://localhost:3000', 
+    'http://localhost:3001',
+    'https://job-scheduler-automation-psi.vercel.app/'
+  ],
   credentials: true,
 }));
 app.use(express.json());
