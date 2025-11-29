@@ -4,7 +4,7 @@
 
 **Built for:** Dotix Full-Stack Developer Skill Test  
 **Status:** ✅ Complete & Production-Ready  
-**Demo Video:** [Add link if available]
+**Demo Video:** https://job-scheduler-automation-psi.vercel.app/
 
 ---
 
