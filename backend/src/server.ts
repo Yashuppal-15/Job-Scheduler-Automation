@@ -15,7 +15,7 @@ app.use(cors({
   origin: [
     'http://localhost:3000', 
     'http://localhost:3001',
-    'https://job-scheduler-automation-psi.vercel.app/'
+    'https://job-scheduler-automation-psi.vercel.app'
   ],
   credentials: true,
 }));
